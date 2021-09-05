@@ -1,25 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from 'react'
+
+export class App extends Component {
+  constructor(props) {
+    super(props)
+    let player_turn = "X";
+    this.state = {
+       board : ["X","","","","","","","","",]
+    }
+  }
+  
+  render() {
+    return (
+      <div>
+        <h1>TIC TAC TOE </h1>
+        <div className = "board">
+          {this.state.board.map((square)=>{
+            return <div className = "square">{square}</div>
+          })}
+        </div>
+      </div>
+    )
+  }
 }
 
 export default App;

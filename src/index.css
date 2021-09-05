@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.board{
+  height: 31rem;
+  width : 31rem;
+  border: 1px solid black;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.square{
+  width:10rem;
+  height: 10rem;
+  border: 1px solid black;
+}
+
+.square:hover{
+    background-color: aqua;
+    cursor:pointer;
+}
+
+h1{
+  display:flex;
+  justify-content: center;
+}
