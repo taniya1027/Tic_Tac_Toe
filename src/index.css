@@ -26,6 +26,8 @@ code {
   width:10rem;
   height: 10rem;
   border: 1px solid black;
+  padding: auto;
+  font-size: 3rem;
 }
 
 .square:hover{
